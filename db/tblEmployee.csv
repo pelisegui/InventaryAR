@@ -1,0 +1,7 @@
+empEmployeeId,empEmployeeAddress,empEmployeeDNI,empEmployeeEmail,empEmployeeFirstName,empEmployeeFullName,empEmployeeLastName,empEmployeePhone1,empCountryId,empLocalityId,empPriceListId,empRegionId,empEmployeeRowDateCreated,empEmployeeRowDateUpdated,empEmployeeRowDateDeleted
+1,calle 1,20.123.456,guillermo@gmail.com,Guillermo,Guillermo Guido,Guido,+5491122334455,,6021010000,11,5,1612319496917,1630122002060,0
+2,calle 2,25.321.654,maximo@mail.com,Maximo,Máximo Cosetti,Cosetti,,,6021010000,11,2,1612319496917,1630287014049,0
+3,,21.435.612,bruno@mail.com,Bruno,Bruno Panini,Panini,,,6021010000,96,5,1612319496917,1630288217677,0
+6,,,hugo@mail.org,Hugo,Hugo Rodriguez,Rodriguez,,,,18,3,1612319496917,1630287610487,0
+7,calle 88,,pablo@mail.com,Pablo,Pablo Fernandez,Fernandez,,,,80,5,1612786726936,1630288073001,0
+8,,,heraclito@mail.com,Heráclito,Heráclito De Efeso,De Efeso,,,,66,5,1618950730160,1630288107578,0

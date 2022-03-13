@@ -1,0 +1,45 @@
+.datatable-crud {
+    .table-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .customer-image {
+        width: 30px;
+        //box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    .p-dialog .customer-image {
+        width: 150px;
+        margin: 0 auto 2rem auto;
+        display: block;
+    }
+
+    .datatable-crud .confirmation-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-badge {
+        border-radius: 2px;
+        padding: .25em .5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: .3px;
+        &.status-enstock {
+            background: #C8E6C9;
+            color: #256029;
+        }
+        &.status-sinstock {
+            background: #FFCDD2;
+            color: #C63737;
+        }
+        &.status-bajostock {
+            background: #FEEDAF;
+            color: #8A5340;
+        }
+    }
+}

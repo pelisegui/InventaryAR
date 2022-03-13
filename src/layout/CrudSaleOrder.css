@@ -1,0 +1,189 @@
+.tablePDF {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rowPDF {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cellPDF {
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+}
+
+.window-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    /* background-color: red !important; */
+}
+
+.confirmation-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+};
+
+.product-badge {
+    border-radius: 2px;
+    padding: .25em .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+}
+
+.status-enstock {
+    background: #C8E6C9;
+    color: #256029;
+}
+
+.status-sinstock {
+    background: #FFCDD2;
+    color: #C63737 !important;
+}
+
+.status-bajostock {
+    background: #FEEDAF;
+    color: #8A5340;
+}
+
+
+.saleOrder-badge {
+    border-radius: 2px;
+    padding: .25em .5rem;
+    /* text-transform: uppercase; */
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+}
+
+.saleOrder-badge-InputText {
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: .25em .5rem;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+}
+
+.status-confirmado {
+    text-transform: uppercase;
+    background: #C8E6C9;
+    color: #256029;
+}
+
+.status-pendiente {
+    text-transform: uppercase;
+    background: #FEEDAF;
+    color: #8A5340;
+}
+
+.status-cancelado {
+    text-transform: uppercase;
+    background: #FFCDD2;
+    color: #C63737;
+}
+
+.status-4 {
+    background: #C8E6C9;
+    color: #256029;
+}
+
+.status-5 {
+    background: #FEEDAF;
+    color: #8A5340;
+}
+
+.status-6 {
+    background: #FFCDD2;
+    color: #C63737;
+}
+
+.saleOrderBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.saleOrderSettingsData {
+    display: flex;
+    justify-content: space-around;
+}
+
+.saleOrderDataTop {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+    width: auto;
+}
+
+.saleOrderDataToplvl2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+    width: auto;
+}
+
+.saleOrderDataBottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: auto;
+}
+
+.totalAmount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    text-align: center;
+    /* min-height: 400px; */
+    align-items: center;
+}
+
+.saleOrder-textAlignment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    /* min-height: 400px; */
+    /* background-color: red;*/
+    align-items: center;
+}
+
+/* the following is to make it responsive */
+@media screen and (max-width: 576px) {
+
+    .picklist .product-item {
+        flex-wrap: wrap;
+    }
+
+    .picklist .product-item .image-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .picklist .product-item img {
+        margin: 0 0 1rem 0;
+        width: 100px;
+    }
+}

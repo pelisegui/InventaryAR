@@ -1,0 +1,94 @@
+.tablePDF {
+    //width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .rowPDF {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        .cellPDF {
+            display: flex;
+            align-items: center;
+            justify-content:  space-between;
+        }
+    }
+}
+
+.table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    //background-color: red !important;
+}
+
+.datatable-crud {
+
+    .confirmation-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    };
+
+    .product-badge {
+        border-radius: 2px;
+        padding: .25em .5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: .3px;
+        &.status-enstock {
+            background: #C8E6C9;
+            color: #256029;
+        }
+        &.status-sinstock {
+            background: #FFCDD2;
+            color: #C63737 !important;
+        }
+        &.status-bajostock {
+            background: #FEEDAF;
+            color: #8A5340;
+        }
+    }
+
+    //the following is to make it responsive
+    @media screen and (max-width: 576px) {
+        .picklist .product-item {
+            flex-wrap: wrap;
+        }
+
+        .picklist .product-item .image-container {
+            width: 100%;
+            text-align: center;
+        }
+
+        .picklist .product-item img {
+            margin: 0 0 1rem 0;
+            width: 100px;
+        }
+    }
+
+}
+
+.saleOrder-badge {
+    border-radius: 2px;
+    padding: .25em .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+    &.status-confirmado {
+        background: #C8E6C9;
+        color: #256029;
+    }
+    &.status-pendiente {
+        background: #FEEDAF;
+        color: #8A5340;
+    }
+    &.status-cancelado {
+        background: #FFCDD2;
+        color: #C63737;
+    }
+}

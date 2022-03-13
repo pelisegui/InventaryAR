@@ -1,0 +1,59 @@
+.datatable-crud {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.window-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.confirmation-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.priceListSettingsData {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.priceListDataTop {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    width: auto;
+}
+
+.priceListDataToplvl2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    width: auto;
+}
+
+.priceList-textAlignment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    /* min-height: 400px; */
+    /* background-color: red;*/
+    align-items: center;
+}

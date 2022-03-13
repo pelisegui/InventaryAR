@@ -1,0 +1,117 @@
+.tablePDF {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rowPDF {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cellPDF {
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+}
+
+
+.table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    /* background-color: red !important; */
+}
+
+
+.product-badge {
+    border-radius: 2px;
+    padding: .25em .5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+}
+
+.status-enstock {
+    background: #C8E6C9;
+    color: #256029;
+}
+
+.status-sinstock {
+    background: #FFCDD2;
+    color: #C63737 !important;
+}
+
+.status-bajostock {
+    background: #FEEDAF;
+    color: #8A5340;
+}
+
+
+.inventory-badge {
+    border-radius: 2px;
+    padding: .25em .5rem;
+    /* text-transform: uppercase; */
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+}
+
+.inventory-badge-InputText {
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: .25em .5rem;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .3px;
+}
+
+
+.inventoryBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inventorySettingsData{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inventoryDataTop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.inventoryDataToplvl2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+    width: auto;
+}
+
+.inventoryDataBottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: auto;
+}
+
+.inventory-textAlignment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    /* min-height: 400px; */
+    /* background-color: red;*/
+    align-items: center;
+}

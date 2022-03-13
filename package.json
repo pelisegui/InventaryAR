@@ -1,0 +1,124 @@
+{
+    "name": "inventaryar",
+    "version": "1.0.0",
+    "description": " Optics Inventory ",
+    "author": {
+        "name": "LittoX9",
+        "email": "pabloelisegui@gmail.com"
+    },
+    "homepage": "./",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": " "
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@fullcalendar/core": "^5.7.2",
+        "@fullcalendar/daygrid": "^5.7.2",
+        "@fullcalendar/interaction": "^5.7.2",
+        "@fullcalendar/react": "^5.7.0",
+        "@fullcalendar/timegrid": "^5.7.2",
+        "@mapbox/node-pre-gyp": "^1.0.7",
+        "axios": "^0.19.0",
+        "chart.js": "3.3.2",
+        "classnames": "^2.2.6",
+        "concurrently": "^6.3.0",
+        "electron-log": "^4.4.6",
+        "primeflex": "3.0.0",
+        "primeicons": "^4.1.0",
+        "primereact": "6.6.0",
+        "prismjs": "1.9.0",
+        "react": "^17.0.1",
+        "react-app-polyfill": "^1.0.6",
+        "react-dom": "^17.0.1",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "3.4.1",
+        "react-transition-group": "^4.4.1",
+        "sass": "^1.32.8",
+        "sqlite3": "^5.0.2"
+    },
+    "devDependencies": {
+        "electron": "^8.2",
+        "electron-builder": "^22.11.7",
+        "wait-on": "^6.0.0"
+    },
+    "main": "src_electron/electron.js",
+    "scripts": {
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "react-start": "react-scripts start",
+        "electron-start": "electron .",
+        "electronLinux-start": "concurrently \"BROWSER=none yarn run react-start\" \"wait-on http://localhost:3000/ && yarn run electron-start\"",
+        "electronWin-start": "concurrently \"set BROWSER=none && yarn run react-start\" \"wait-on http://localhost:3000/ && yarn run electron-start\"",
+        "start": "yarn run electronLinux-start",
+        "pack": "react-scripts build && electron-builder --dir --publish never",
+        "dist": "react-scripts build && electron-builder",
+        "postinstall": "electron-builder install-app-deps"
+    },
+    "build": {
+        "appId": "LittoX9.InventaryAR",
+        "files": [
+            "build/**/*",
+            "node_modules/**/*",
+            "src_electron/**/*",
+            "db/**/*"
+        ],
+        "directories": {
+            "buildResources": "assets",
+            "output": "./out/${os}_${arch}_${name}"
+        },
+        "extraMetadata": {
+            "main": "build/src_electron/electron.js"
+        },
+        "dmg": {
+            "contents": [
+                {
+                    "x": 110,
+                    "y": 150
+                },
+                {
+                    "x": 240,
+                    "y": 150,
+                    "type": "link",
+                    "path": "/Applications"
+                }
+            ]
+        },
+        "linux": {
+            "target": [
+                "AppImage",
+                "deb"
+            ]
+        },
+        "win": {
+            "target": [
+                {
+                    "target": "nsis",
+                    "arch": [
+                        "x64",
+                        "ia32"
+                    ]
+                }
+            ],
+            "icon": "build/icon.ico"
+        },
+        "nsis": {
+            "allowToChangeInstallationDirectory": true,
+            "oneClick": false,
+            "perMachine": false
+        }
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app"
+        ]
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
+    ]
+}
